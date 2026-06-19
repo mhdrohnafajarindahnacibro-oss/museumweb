@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senjata Tradisional - Museum Simalungun</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            background: linear-gradient(rgba(7,11,22,0.6), rgba(7,11,22,0.6)), url('logo.jpeg') center/cover fixed no-repeat;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #f1c40f;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f1c40f;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #f1c40f;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #f1c40f;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .content {
+            background: linear-gradient(135deg, rgba(241, 196, 15, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+            border: 2px solid #f1c40f;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .content h2 {
+            color: #f1c40f;
+            margin: 20px 0 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .content p {
+            color: #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            color: #e0e0e0;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(241, 196, 15, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-image {
+            background-color: rgba(241, 196, 15, 0.1);
+            min-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f1c40f;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .gallery-caption {
+            padding: 16px;
+        }
+
+        .gallery-caption h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #f1c40f;
+        }
+
+        .gallery-caption p {
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .btn-kembali {
+            display: inline-block;
+            background-color: #f1c40f;
+            color: #1a1a1a;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-kembali:hover {
+            background-color: #f39c12;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(241, 196, 15, 0.6);
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            border-top: 3px solid #f1c40f;
+            color: #b2bec3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🏛️ MUSEUM SIMALUNGUN</div>
+        <nav class="nav-links">
+            <a href="webmuseum.html">Beranda</a>
+            <a href="jelajahi.html">Jelajahi</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="title">🛡️ Senjata Tradisional</h1>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 1</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 1</h3>
+                    <p>Keris pusaka dengan ukiran khas Simalungun.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 2</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 2</h3>
+                    <p>Tombak panjang yang dipakai dalam upacara perang.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 3</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 3</h3>
+                    <p>Pedang tradisional yang ditempa dengan sangat tajam.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 4</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 4</h3>
+                    <p>Perisai kayu yang dihias dengan ornamen tradisional.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 5</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 5</h3>
+                    <p>Busur dan panah yang digunakan untuk berburu dan perang.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 6</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 6</h3>
+                    <p>Belati kecil yang biasa dibawa di pinggang.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 7</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 7</h3>
+                    <p>Golok tradisional yang kuat dan serbaguna.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 8</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 8</h3>
+                    <p>Perisai kulit dengan motif adat Simalungun.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 9</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 9</h3>
+                    <p>Pedang kecil yang digunakan dalam latihan beladiri.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 10</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 10</h3>
+                    <p>Kapak tradisional untuk alat perang dan upacara.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 11</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 11</h3>
+                    <p>Parang panjang dengan hiasan ukiran tradisional.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 12</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 12</h3>
+                    <p>Perisai anyaman yang digunakan oleh pejuang adat.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 13</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 13</h3>
+                    <p>Keris kecil yang disimpan sebagai pusaka keluarga.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 14</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 14</h3>
+                    <p>Tombak bersadur logam untuk perlindungan dan serangan.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 15</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 15</h3>
+                    <p>Alat latihan tradisional untuk pengembangan keterampilan perang.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 16</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 16</h3>
+                    <p>Pedang upacara yang menunjukkan kehormatan prajurit.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 17</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 17</h3>
+                    <p>Alat pelontar di medan perang, digunakan sebagai dukungan.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 18</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 18</h3>
+                    <p>Mata tombak hias yang mencerminkan desain artistik.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 19</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 19</h3>
+                    <p>Perisai perunggu yang memberikan perlindungan kuat.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-image">Gambar 20</div>
+                <div class="gallery-caption">
+                    <h3>Senjata 20</h3>
+                    <p>Senjata upacara yang diwarnai dengan makna simbolis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="jelajahi.html" class="btn-kembali">← Kembali ke Jelajahi</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Website Museum Daerah - Dibuat dengan VS Code | Jelajahi Warisan Budaya Kami By ervansius sinaga
+    </footer>
+</body>
+</html>
